@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#navbar
+{
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 30px;
+
+}
+#navbar ul
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#navbar ul li
+{
+    list-style: none;
+    margin-right: 3pc;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2pc;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+#navbar ul li a:hover
+{
+    border-bottom: 5px solid whitesmoke;
+}
+body
+{
+    background: url(https://i.pinimg.com/564x/e5/b2/ad/e5b2ad13bcef184930b17778a550809f.jpg) no-repeat center ;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    font-size:25px;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+.intro
+{
+    padding: 100px 0;
+}
+.container
+{
+    width: 90%;
+    max-width:1200px ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+.timeline ul
+{
+    list-style: none;
+    padding: 50px 0;
+    /* margin-right: auto;
+    margin-left: auto;
+    text-align: center; */
+}
+.timeline ul li
+{
+    width: 6px;
+    padding-top: 50px;
+    margin: auto;
+    position: relative;
+    background: #fff;
+}
+.timeline ul li div
+{
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background-color: #f45b69;
+
+}
+.timeline ul li:nth-child(odd) div
+{
+    left: 45px;
+    transform:translate3d(200px,0,0) ;
+}
+.timeline ul li:nth-child(even) div
+{
+    left: -445px;
+    transform:translate3d(-200px,0,0) ;
+}
+time
+{
+    display: block;
+    font-style: 1.4pc;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+.timeline ul li div
+{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.timeline ul li.in-view div 
+{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+footer
+{
+    text-align: center;
+    background-color: black;
+}
+footer i
+{
+    color:white;
+}
+
